@@ -1,0 +1,15 @@
+[
+    {
+        "request": {
+            "method": "GET",
+            "path": "/test/get/route",
+            "headers": "{'custom-header': 'value'}"
+        },
+        "response": {
+            "statusCode": 200,
+            "headers": "{'custom-heade': 'value'}",
+            "body": "{\"woohoo\":\"Stub found!\"}"
+        },
+        "responseDelayTime": 0
+    }
+]
