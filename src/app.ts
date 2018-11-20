@@ -1,7 +1,5 @@
 'use strict';
 
-import "reflect-metadata";
-import "es6-shim";
 import {Server} from './Server'
 import {StubsMock} from "./stub/StubsMock";
 

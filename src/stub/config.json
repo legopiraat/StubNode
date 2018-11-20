@@ -2,14 +2,13 @@
     {
         "request": {
             "method": "GET",
-            "path": "/test/get/route",
-            "headers": "{'custom-header': 'value'}"
+            "path": "/test/get/route"
         },
         "response": {
             "statusCode": 200,
-            "headers": "{'custom-heade': 'value'}",
+            "headers": "{'custom-header': 'value'}",
             "body": "{\"woohoo\":\"Stub found!\"}"
         },
-        "responseDelayTime": 0
+        "responseDelay": 0
     }
 ]

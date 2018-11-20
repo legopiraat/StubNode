@@ -2,21 +2,16 @@
 
 import { Response } from './Response';
 import { Request } from "./Request";
-import {Type, plainToClass } from 'class-transformer';
 
 export class Stub {
 
-    @Type(() => Request)
     public request: Request
-
-    @Type(() => Response)
     public response: Response
+    public responseDelay: number
 
-    public responseDelayTime: Number
-
-    constructor(request: Request, response: Response, responseDelayTime: number) {
+    constructor(request: Request, response: Response, responseDelay: number) {
         this.request = request;
         this.response = response;
-        this.responseDelayTime = responseDelayTime;
+        this.responseDelay = responseDelay;
     }
 }
